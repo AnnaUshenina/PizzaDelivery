@@ -8,10 +8,7 @@ namespace PizzaDelivery
     /// </summary>
     public class PizzaRequestDto
     {
-        /// <summary>
-        /// Дата заполнения
-        /// </summary>
-        public DateTime Filled { get; set; }
+        
         /// <summary>
         /// ФИО клиента
         /// </summary>
@@ -23,7 +20,7 @@ namespace PizzaDelivery
         /// <summary>
         /// Цена
         /// </summary>
-        public double Price { get; set; }
+        public decimal Price { get; set; }
         /// <summary>
         /// Способ оплаты
         /// </summary>
@@ -58,7 +55,17 @@ namespace PizzaDelivery
         /// <summary>
         /// Размер пиццы
         /// </summary>
-        public PizzaSize size { get; set; } 
+        public PizzaSize size { get; set; }
+
+        public override string ToString()
+        {
+            return string.Format("{0} {1} {2} {3}", pizza, AddMushrooms, Dough, size);
+        }
+
+        public PizzaMaker Clone()
+        {
+            return new PizzaMaker { pizza = pizza, AddMushrooms = AddMushrooms, Dough = Dough, size = size };
+        }
     }
     /// <summary>
     /// Размер пиццы

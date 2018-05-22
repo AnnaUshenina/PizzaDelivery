@@ -1,0 +1,11 @@
+C:\Users\Анна\Desktop\STUDY\ПРОГАНЬЕ\PizzaDelivery\PizzaDelivery\bin\Debug\PizzaDelivery.dll
+C:\Users\Анна\Desktop\STUDY\ПРОГАНЬЕ\PizzaDelivery\PizzaDelivery\bin\Debug\PizzaDelivery.pdb
+C:\Users\Анна\Desktop\STUDY\ПРОГАНЬЕ\PizzaDelivery\PizzaDelivery\obj\Debug\PizzaDelivery.csprojResolveAssemblyReference.cache
+C:\Users\Анна\Desktop\STUDY\ПРОГАНЬЕ\PizzaDelivery\PizzaDelivery\obj\Debug\PizzaDelivery.csproj.CoreCompileInputs.cache
+C:\Users\Анна\Desktop\STUDY\ПРОГАНЬЕ\PizzaDelivery\PizzaDelivery\obj\Debug\PizzaDelivery.dll
+C:\Users\Анна\Desktop\STUDY\ПРОГАНЬЕ\PizzaDelivery\PizzaDelivery\obj\Debug\PizzaDelivery.pdb
+C:\Users\Кирилл\Desktop\Kirill\Progs\PizzaDelivery\PizzaDelivery\bin\Debug\PizzaDelivery.dll
+C:\Users\Кирилл\Desktop\Kirill\Progs\PizzaDelivery\PizzaDelivery\bin\Debug\PizzaDelivery.pdb
+C:\Users\Кирилл\Desktop\Kirill\Progs\PizzaDelivery\PizzaDelivery\obj\Debug\PizzaDelivery.csprojResolveAssemblyReference.cache
+C:\Users\Кирилл\Desktop\Kirill\Progs\PizzaDelivery\PizzaDelivery\obj\Debug\PizzaDelivery.dll
+C:\Users\Кирилл\Desktop\Kirill\Progs\PizzaDelivery\PizzaDelivery\obj\Debug\PizzaDelivery.pdb
