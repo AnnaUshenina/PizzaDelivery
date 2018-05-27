@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using PizzaDelivery;
 
@@ -115,10 +110,74 @@ namespace PizzaDeliveryFprm
         {
             InitializeComponent();
             IsNull();
-           
-        }
+            CheckLicense();
 
-        private void SaveB_Click(object sender, EventArgs e)
+        }
+        private void CheckLicense()
+        {
+            var lv = new LicenceValidator(Directory.GetCurrentDirectory());
+            if (!lv.HasLicense)
+            {
+                MessageBox.Show("Лицензия не найдена. Укажите путь к папке с лицензией.");
+                FolderBrowserDialog dr = new FolderBrowserDialog();
+                var result = dr.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    CheckLicense(dr.SelectedPath);
+                }
+                if (result == DialogResult.Cancel)
+                {
+                    Application.Exit();
+                }
+            }
+            else if (!lv.IsValid)
+            {
+                MessageBox.Show("Лицензия просрочена.Укажите путь к папке с лицензией.");
+                FolderBrowserDialog dr = new FolderBrowserDialog();
+                var result = dr.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    CheckLicense(dr.SelectedPath);
+                }
+                if (result == DialogResult.Cancel)
+                {
+                    Application.Exit();
+                }
+            }
+        }
+        private void CheckLicense(string newPath)
+        {
+            var lv = new LicenceValidator(newPath);
+            if (!lv.HasLicense)
+            {
+                MessageBox.Show("Лицензия не найдена. Укажите путь к папке с лицензией.");
+                FolderBrowserDialog dr = new FolderBrowserDialog();
+                var result = dr.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    CheckLicense(dr.SelectedPath);
+                }
+                if (result == DialogResult.Cancel)
+                {
+                    Application.Exit();
+                }
+            }
+            if (!lv.IsValid)
+            {
+                MessageBox.Show("Лицензия просрочена.Укажите путь к папке с лицензией.");
+                FolderBrowserDialog dr = new FolderBrowserDialog();
+                var result = dr.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    CheckLicense(dr.SelectedPath);
+                }
+                if (result == DialogResult.Cancel)
+                {
+                    Application.Exit();
+                }
+            }
+        }
+            private void SaveB_Click(object sender, EventArgs e)
         {
             var sfd = new SaveFileDialog()
             {
@@ -170,19 +229,8 @@ namespace PizzaDeliveryFprm
         private void PizzaBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             ///////////
-        }
-
-        private void Close_Click(object sender, EventArgs e)
-        {
-           //
-        }
-
-        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
-        {
-            //
-        }
-
-        private void выйтиToolStripMenuItem_Click(object sender, EventArgs e)
+        }     
+        private void tabPage1_Click(object sender, EventArgs e)
         {
             //
         }

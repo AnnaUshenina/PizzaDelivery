@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaTests", "PizzaTests\Pi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PizzaDeliveryFprm", "PizzaDeliveryFprm\PizzaDeliveryFprm.csproj", "{A58E753C-0B60-4C80-9720-DEC58327B2B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicenceGenerator", "LicenceGenerator\LicenceGenerator.csproj", "{30AF119E-C3B2-47F9-92F7-1F7A964AC0B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A58E753C-0B60-4C80-9720-DEC58327B2B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A58E753C-0B60-4C80-9720-DEC58327B2B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A58E753C-0B60-4C80-9720-DEC58327B2B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30AF119E-C3B2-47F9-92F7-1F7A964AC0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30AF119E-C3B2-47F9-92F7-1F7A964AC0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30AF119E-C3B2-47F9-92F7-1F7A964AC0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30AF119E-C3B2-47F9-92F7-1F7A964AC0B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -20,3 +20,5 @@ C:\Users\Анна\Desktop\STUDY\ПРОГАНЬЕ\PizzaDelivery\PizzaDeliveryFprm
 C:\Users\Анна\Desktop\STUDY\ПРОГАНЬЕ\PizzaDelivery\PizzaDeliveryFprm\obj\Debug\PizzaDeliveryFprm.csproj.CopyComplete
 C:\Users\Анна\Desktop\STUDY\ПРОГАНЬЕ\PizzaDelivery\PizzaDeliveryFprm\obj\Debug\PizzaDeliveryFprm.exe
 C:\Users\Анна\Desktop\STUDY\ПРОГАНЬЕ\PizzaDelivery\PizzaDeliveryFprm\obj\Debug\PizzaDeliveryFprm.pdb
+C:\Users\Анна\Desktop\STUDY\ПРОГАНЬЕ\PizzaDelivery\PizzaDeliveryFprm\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\Users\Анна\Desktop\STUDY\ПРОГАНЬЕ\PizzaDelivery\PizzaDeliveryFprm\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
