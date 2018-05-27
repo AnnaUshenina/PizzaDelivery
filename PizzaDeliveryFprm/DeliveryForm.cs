@@ -113,7 +113,6 @@ namespace PizzaDeliveryFprm
             CheckLicense();
 
         }
-        //checklicence
         private void CheckLicense()
         {
             var lv = new LicenceValidator(Directory.GetCurrentDirectory());
