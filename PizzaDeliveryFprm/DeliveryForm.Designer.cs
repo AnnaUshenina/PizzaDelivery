@@ -30,29 +30,29 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.PizzaBox = new System.Windows.Forms.ListBox();
+            this.OpenB = new System.Windows.Forms.Button();
             this.PriceNum = new System.Windows.Forms.NumericUpDown();
+            this.SaveB = new System.Windows.Forms.Button();
+            this.PizzaBox = new System.Windows.Forms.ListBox();
+            this.DelB = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.AddB = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.AddB = new System.Windows.Forms.Button();
-            this.DelB = new System.Windows.Forms.Button();
-            this.SaveB = new System.Windows.Forms.Button();
-            this.OpenB = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PriceNum)).BeginInit();
@@ -93,15 +93,17 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Детали заказа";
             // 
-            // PizzaBox
+            // OpenB
             // 
-            this.PizzaBox.FormattingEnabled = true;
-            this.PizzaBox.ItemHeight = 18;
-            this.PizzaBox.Location = new System.Drawing.Point(18, 86);
-            this.PizzaBox.Name = "PizzaBox";
-            this.PizzaBox.Size = new System.Drawing.Size(289, 292);
-            this.PizzaBox.TabIndex = 16;
-            this.PizzaBox.SelectedIndexChanged += new System.EventHandler(this.PizzaBox_SelectedIndexChanged);
+            this.OpenB.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.OpenB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.OpenB.Location = new System.Drawing.Point(470, 425);
+            this.OpenB.Name = "OpenB";
+            this.OpenB.Size = new System.Drawing.Size(89, 36);
+            this.OpenB.TabIndex = 6;
+            this.OpenB.Text = "Открыть";
+            this.OpenB.UseVisualStyleBackColor = true;
+            this.OpenB.Click += new System.EventHandler(this.OpenB_Click);
             // 
             // PriceNum
             // 
@@ -115,6 +117,40 @@
             this.PriceNum.ReadOnly = true;
             this.PriceNum.Size = new System.Drawing.Size(87, 26);
             this.PriceNum.TabIndex = 15;
+            // 
+            // SaveB
+            // 
+            this.SaveB.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.SaveB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.SaveB.Location = new System.Drawing.Point(375, 425);
+            this.SaveB.Name = "SaveB";
+            this.SaveB.Size = new System.Drawing.Size(89, 37);
+            this.SaveB.TabIndex = 5;
+            this.SaveB.Text = "Сохранить";
+            this.SaveB.UseVisualStyleBackColor = true;
+            this.SaveB.Click += new System.EventHandler(this.SaveB_Click);
+            // 
+            // PizzaBox
+            // 
+            this.PizzaBox.FormattingEnabled = true;
+            this.PizzaBox.ItemHeight = 18;
+            this.PizzaBox.Location = new System.Drawing.Point(18, 86);
+            this.PizzaBox.Name = "PizzaBox";
+            this.PizzaBox.Size = new System.Drawing.Size(289, 292);
+            this.PizzaBox.TabIndex = 16;
+            this.PizzaBox.SelectedIndexChanged += new System.EventHandler(this.PizzaBox_SelectedIndexChanged);
+            // 
+            // DelB
+            // 
+            this.DelB.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.DelB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.DelB.Location = new System.Drawing.Point(215, 410);
+            this.DelB.Name = "DelB";
+            this.DelB.Size = new System.Drawing.Size(92, 43);
+            this.DelB.TabIndex = 4;
+            this.DelB.Text = "Удалить из корзины";
+            this.DelB.UseVisualStyleBackColor = true;
+            this.DelB.Click += new System.EventHandler(this.DelB_Click);
             // 
             // panel4
             // 
@@ -167,6 +203,18 @@
             this.radioButton4.Text = "Наличными";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
+            // AddB
+            // 
+            this.AddB.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
+            this.AddB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.AddB.Location = new System.Drawing.Point(18, 410);
+            this.AddB.Name = "AddB";
+            this.AddB.Size = new System.Drawing.Size(92, 43);
+            this.AddB.TabIndex = 3;
+            this.AddB.Text = "Добавить пиццу";
+            this.AddB.UseVisualStyleBackColor = true;
+            this.AddB.Click += new System.EventHandler(this.AddB_Click);
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -177,39 +225,6 @@
             this.label10.Size = new System.Drawing.Size(183, 16);
             this.label10.TabIndex = 10;
             this.label10.Text = "Выберите способ оплаты:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold);
-            this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label9.Location = new System.Drawing.Point(470, 106);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 18);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "рублей";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
-            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label8.Location = new System.Drawing.Point(362, 64);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 19);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "ЦЕНА:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label5.Location = new System.Drawing.Point(103, 60);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(105, 23);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "КОРЗИНА";
             // 
             // label4
             // 
@@ -222,6 +237,39 @@
             this.label4.Size = new System.Drawing.Size(196, 33);
             this.label4.TabIndex = 0;
             this.label4.Text = "PIZZA to YOU";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label9.Location = new System.Drawing.Point(470, 106);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 18);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "рублей";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label5.Location = new System.Drawing.Point(103, 60);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(105, 23);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "КОРЗИНА";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.label8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label8.Location = new System.Drawing.Point(362, 64);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(61, 19);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "ЦЕНА:";
             // 
             // tabPage2
             // 
@@ -260,6 +308,14 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Введите ФИО:";
             // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic);
+            this.textBox3.Location = new System.Drawing.Point(10, 273);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(544, 22);
+            this.textBox3.TabIndex = 3;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -271,14 +327,6 @@
             this.label3.TabIndex = 10;
             this.label3.Text = "Данные о доставке";
             // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic);
-            this.textBox3.Location = new System.Drawing.Point(10, 273);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(544, 22);
-            this.textBox3.TabIndex = 3;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -289,17 +337,6 @@
             this.label2.Size = new System.Drawing.Size(229, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Введите адрес доставки:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label6.Location = new System.Drawing.Point(6, 154);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(300, 20);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Выберите дату и время доставки:";
             // 
             // dateTimePicker1
             // 
@@ -315,53 +352,16 @@
             this.dateTimePicker1.TabIndex = 0;
             this.dateTimePicker1.Value = new System.DateTime(2018, 5, 22, 0, 0, 0, 0);
             // 
-            // AddB
+            // label6
             // 
-            this.AddB.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.AddB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.AddB.Location = new System.Drawing.Point(18, 410);
-            this.AddB.Name = "AddB";
-            this.AddB.Size = new System.Drawing.Size(92, 43);
-            this.AddB.TabIndex = 3;
-            this.AddB.Text = "Добавить пиццу";
-            this.AddB.UseVisualStyleBackColor = true;
-            this.AddB.Click += new System.EventHandler(this.AddB_Click);
-            // 
-            // DelB
-            // 
-            this.DelB.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.DelB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.DelB.Location = new System.Drawing.Point(215, 410);
-            this.DelB.Name = "DelB";
-            this.DelB.Size = new System.Drawing.Size(92, 43);
-            this.DelB.TabIndex = 4;
-            this.DelB.Text = "Удалить из корзины";
-            this.DelB.UseVisualStyleBackColor = true;
-            this.DelB.Click += new System.EventHandler(this.DelB_Click);
-            // 
-            // SaveB
-            // 
-            this.SaveB.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.SaveB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.SaveB.Location = new System.Drawing.Point(375, 425);
-            this.SaveB.Name = "SaveB";
-            this.SaveB.Size = new System.Drawing.Size(89, 37);
-            this.SaveB.TabIndex = 5;
-            this.SaveB.Text = "Сохранить";
-            this.SaveB.UseVisualStyleBackColor = true;
-            this.SaveB.Click += new System.EventHandler(this.SaveB_Click);
-            // 
-            // OpenB
-            // 
-            this.OpenB.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold);
-            this.OpenB.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.OpenB.Location = new System.Drawing.Point(470, 425);
-            this.OpenB.Name = "OpenB";
-            this.OpenB.Size = new System.Drawing.Size(89, 36);
-            this.OpenB.TabIndex = 6;
-            this.OpenB.Text = "Открыть";
-            this.OpenB.UseVisualStyleBackColor = true;
-            this.OpenB.Click += new System.EventHandler(this.OpenB_Click);
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.label6.Location = new System.Drawing.Point(6, 154);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(300, 20);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Выберите дату и время доставки:";
             // 
             // DeliveryForm
             // 

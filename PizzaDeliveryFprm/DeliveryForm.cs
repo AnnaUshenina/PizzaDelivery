@@ -115,6 +115,7 @@ namespace PizzaDeliveryFprm
         {
             InitializeComponent();
             IsNull();
+           
         }
 
         private void SaveB_Click(object sender, EventArgs e)
@@ -169,6 +170,21 @@ namespace PizzaDeliveryFprm
         private void PizzaBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             ///////////
+        }
+
+        private void Close_Click(object sender, EventArgs e)
+        {
+           //
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+            //
+        }
+
+        private void выйтиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //
         }
     }
 
